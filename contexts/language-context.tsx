@@ -1,18 +1,20 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { createContext, useContext, useState, useEffect } from "react"
+import type React from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
-type Language = "en" | "ar"
+type Language = "en" | "ar";
 
 interface LanguageContextType {
-  language: Language
-  setLanguage: (lang: Language) => void
-  t: (key: string) => string
-  dir: "ltr" | "rtl"
+  language: Language;
+  setLanguage: (lang: Language) => void;
+  t: (key: string) => string;
+  dir: "ltr" | "rtl";
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined
+);
 
 export const translations = {
   en: {
@@ -25,59 +27,57 @@ export const translations = {
 
     // Hero Section
     "hero.badge": "Free Product Review",
-    "hero.title": "Transform the Way You Use Tally",
+    "hero.title":
+      "VAT-Ready Business Accounting & Management Software for Companies in Saudi Arabia & the GCC",
     "hero.description":
-      "Schedule your free product review session to unlock the full power of TallyPrime. Identify errors, streamline processes, and maximize your setup.",
-    "hero.cta": "Book a Review Call",
-    "hero.learnMore": "Learn More",
+      "Trusted by 7,000,000+ active users across 130+ countries — TallyPrime helps you automate accounting, manage inventory, get real-time financial insights, and ensure full VAT compliance.",
+    "hero.cta": "Book a Free Consultation",
+    "hero.learnMore": "Schedule a Personalized Demo",
 
-    // Why Review Section
-    "why.title": "Why Get Your Tally Setup Reviewed?",
-    "why.subtitle":
-      "Professional experts analyze your configuration to unlock hidden potential and eliminate costly inefficiencies.",
-    "why.feature1.title": "Identify Hidden Inefficiencies",
-    "why.feature1.desc":
-      "Discover processes that are slowing you down and learn how to optimize them for maximum productivity.",
-    "why.feature2.title": "Ensure Compliance",
-    "why.feature2.desc":
-      "Verify that your Tally setup meets all accounting and regulatory standards for your industry.",
-    "why.feature3.title": "Maximize ROI",
-    "why.feature3.desc":
-      "Get the most value from your Tally investment with best practices and advanced configurations.",
-    "why.feature4.title": "Boost Team Productivity",
-    "why.feature4.desc": "Streamline workflows so your team can focus on strategic work instead of manual processes.",
+    // Add to EN
+    "key.title": "Key Value Proposition",
+    "key.subtitle": "TallyPrime empowers your business to grow faster with:",
+    "key.point1": "Automated accounting & financial workflows",
+    "key.point2": "Fast, accurate VAT-compliant billing & invoicing",
+    "key.point3": "Inventory & stock control across multiple locations",
+    "key.point4": "Real-time financial & MIS reporting",
+    "key.point5": "Multi-user & multi-branch support",
+    "key.point6": "Simple and intuitive interface",
+    "key.point7": "Local implementation, training & support",
 
     // What's Included Section
-    "included.title": "What's Included in Your Free Review",
-    "included.subtitle": "A comprehensive 30-minute session covering all aspects of your Tally setup.",
-    "included.item1": "Current configuration analysis",
-    "included.item2": "Compliance verification",
-    "included.item3": "Efficiency recommendations",
-    "included.item4": "Process optimization plan",
-    "included.item5": "Team training recommendations",
-    "included.item6": "Personalized report & follow-up",
+    "consult.title": "Free Consultation Includes:",
+    "consult.subtitle": "During your complimentary session, you will receive:",
+    "consult.point1":
+      "A personalized system walkthrough based on your industry",
+    "consult.point2": "Recommended accounting and inventory workflows",
+    "consult.point3": "VAT best-practice guidance tailored to Saudi compliance",
+    "consult.point4": "Pricing, licensing, and implementation guidance",
+    "consult.point5": "A live, customized TallyPrime demo",
+    "consult.description":
+      "This consultation is designed specifically for business decision-makers evaluating digital transformation and automation.",
+    "consult.note":
+      "If you're currently using Excel, manual bookkeeping, or outdated systems, this session will show how TallyPrime can streamline operations and accelerate business growth.",
+    "consult.cta": "Reserve Your Slot Now",
 
     // Who It's For Section
-    "who.title": "Who Should Get a Review?",
-    "who.subtitle": "Perfect for businesses at any stage of their Tally journey.",
-    "who.segment1.title": "Growing Businesses",
-    "who.segment1.desc": "Scaling operations but worried about system bottlenecks.",
-    "who.segment2.title": "New Tally Users",
-    "who.segment2.desc": "Recently switched to Tally and want to maximize implementation.",
-    "who.segment3.title": "Existing Users",
-    "who.segment3.desc": "Using Tally for years but unsure if configuration is optimal.",
+    // EN
+    "trust.title": "Trusted Worldwide",
+    "trust.subtitle":
+      "Trusted by businesses in retail, trading, contracting, manufacturing, and many more industries across 140+ countries.",
+    "trust.point1": "Seamless setup & configuration",
+    "trust.point2": "Live training for your team",
+    "trust.point3": "Ongoing technical support",
+    "trust.point4": "Smooth onboarding for immediate productivity",
+    "trust.note":
+      "Get value from day one — with a system your team will actually enjoy using.",
 
     // Why Choose Us Section
-    "choose.title": "Why Choose TallyPrime?",
-    "choose.subtitle": "Industry leaders who have helped 1000+ businesses optimize their Tally setup.",
-    "choose.feature1.title": "Expert Consultants",
-    "choose.feature1.desc": "Our team has 15+ years of Tally implementation experience.",
-    "choose.feature2.title": "Quick & Easy",
-    "choose.feature2.desc": "30-minute sessions fit perfectly into your busy schedule.",
-    "choose.feature3.title": "Proven Results",
-    "choose.feature3.desc": "Average clients see 25% efficiency improvement within 3 months.",
-    "choose.feature4.title": "Ongoing Support",
-    "choose.feature4.desc": "We don't just review—we support your implementation journey.",
+   // EN
+"whychoose.title": "Why Businesses Choose TallyPrime",
+"whychoose.description":
+  "Smart billing, real-time business insights, seamless inventory management, and complete VAT compliance — all in one powerful system that’s easy to use and scalable as your business grows.",
+
 
     // Booking Section
     "booking.title": "Ready to Transform Your Tally Setup?",
@@ -93,7 +93,8 @@ export const translations = {
 
     // Booking Modal
     "modal.title": "Book Your Free Review",
-    "modal.subtitle": "Schedule your 30-minute personalized Tally product review session",
+    "modal.subtitle":
+      "Schedule your 30-minute personalized Tally product review session",
     "modal.step1": "Your Information",
     "modal.step2": "Select Your Preferred Time",
     "modal.step3": "Additional Information",
@@ -113,12 +114,23 @@ export const translations = {
     "modal.booking": "Booking...",
     "modal.characters": "characters",
 
-    // Footer
-    "footer.copyright": "TallyPrime. All rights reserved.",
+    // ✅ Footer (Full content added)
+    "footer.description": "Maximize your Tally potential with expert guidance.",
+    "footer.productTitle": "Product",
+    "footer.features": "Features",
+    "footer.pricing": "Pricing",
+    "footer.security": "Security",
+    "footer.companyTitle": "Company",
+    "footer.about": "About",
+    "footer.blog": "Blog",
+    "footer.contact": "Contact",
+    "footer.legalTitle": "Legal",
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Service",
-    "footer.contact": "Contact",
+    "footer.cookies": "Cookies",
+    "footer.copyright": "TallyPrime. All rights reserved.",
   },
+
   ar: {
     // Navigation
     "nav.brand": "تالي برايم",
@@ -135,49 +147,53 @@ export const translations = {
     "hero.cta": "احجز مكالمة مراجعة",
     "hero.learnMore": "تعرف على المزيد",
 
-    // Why Review Section
-    "why.title": "لماذا يجب أن تحصل على مراجعة إعداد تالي الخاص بك؟",
-    "why.subtitle": "يقوم الخبراء المحترفون بتحليل تكوينك لفتح الإمكانات المخفية والقضاء على عدم الكفاءة المكلفة.",
-    "why.feature1.title": "حدد أوجه القصور المخفية",
-    "why.feature1.desc": "اكتشف العمليات التي تبطئك وتعلم كيفية تحسينها لزيادة الإنتاجية.",
-    "why.feature2.title": "ضمان الامتثال",
-    "why.feature2.desc": "تحقق من أن إعداد تالي الخاص بك يفي بجميع معايير المحاسبة والتنظيمية لصناعتك.",
-    "why.feature3.title": "زيادة العائد على الاستثمار",
-    "why.feature3.desc": "احصل على أقصى قيمة من استثمار تالي الخاص بك من خلال أفضل الممارسات والتكوينات المتقدمة.",
-    "why.feature4.title": "تعزيز إنتاجية الفريق",
-    "why.feature4.desc": "تبسيط سير العمل حتى يتمكن فريقك من التركيز على العمل الاستراتيجي بدلاً من العمليات اليدوية.",
+    // Add to AR
+    "key.title": "القيمة الأساسية",
+    "key.subtitle":
+      "يمكن لبرنامج تالي برايم تمكين عملك من النمو بشكل أسرع من خلال:",
+    "key.point1": "أتمتة المحاسبة والعمليات المالية",
+    "key.point2":
+      "فواتير ومحاسبة ضريبية دقيقة ومتوافقة مع ضريبة القيمة المضافة",
+    "key.point3": "إدارة المخزون عبر مواقع متعددة",
+    "key.point4": "تقارير مالية وتشغيلية في الوقت الحقيقي",
+    "key.point5": "دعم تعدد المستخدمين والفروع",
+    "key.point6": "واجهة بسيطة وسهلة الاستخدام",
+    "key.point7": "تنفيذ وتدريب ودعم محلي",
 
     // What's Included Section
-    "included.title": "ما المدرج في مراجعتك المجانية",
-    "included.subtitle": "جلسة شاملة مدتها 30 دقيقة تغطي جميع جوانب إعداد تالي الخاص بك.",
-    "included.item1": "تحليل التكوين الحالي",
-    "included.item2": "التحقق من الامتثال",
-    "included.item3": "توصيات الكفاءة",
-    "included.item4": "خطة تحسين العملية",
-    "included.item5": "توصيات تدريب الفريق",
-    "included.item6": "تقرير مخصص ومتابعة",
+    // AR
+    "consult.title": "تشمل الاستشارة المجانية:",
+    "consult.subtitle": "أثناء جلستك المجانية، ستحصل على:",
+    "consult.point1": "عرض مخصص للنظام بناءً على مجال عملك",
+    "consult.point2": "توصيات لسير العمل المحاسبي وإدارة المخزون",
+    "consult.point3":
+      "إرشادات أفضل الممارسات لضريبة القيمة المضافة متوافقة مع أنظمة السعودية",
+    "consult.point4": "إرشادات التسعير والتراخيص والتنفيذ",
+    "consult.point5": "عرض حي مخصص لبرنامج TallyPrime",
+    "consult.description":
+      "تم تصميم هذه الاستشارة خصيصاً لصناع القرار الذين يقيمون التحول الرقمي والأتمتة.",
+    "consult.note":
+      "إذا كنت تستخدم Excel أو الدفاتر اليدوية أو أنظمة قديمة، فستوضح لك هذه الجلسة كيف يمكن لـ TallyPrime تبسيط العمليات وتسريع نمو عملك.",
+    "consult.cta": "احجز موعدك الآن",
 
     // Who It's For Section
-    "who.title": "من الذي يجب أن يحصل على مراجعة؟",
-    "who.subtitle": "مثالي للشركات في أي مرحلة من مراحل رحلة تالي الخاصة بها.",
-    "who.segment1.title": "الشركات المتنامية",
-    "who.segment1.desc": "توسيع العمليات لكن قلق بشأن اختناقات النظام.",
-    "who.segment2.title": "مستخدمو تالي الجدد",
-    "who.segment2.desc": "انتقلنا مؤخراً إلى تالي وتريد تعظيم التنفيذ.",
-    "who.segment3.title": "المستخدمون الموجودون",
-    "who.segment3.desc": "استخدام تالي لسنوات لكن غير متأكد مما إذا كان التكوين مثالياً.",
+    // AR
+    "trust.title": "ثقة عالمية",
+    "trust.subtitle":
+      "موثوق من قبل الشركات في مجالات التجزئة والتجارة والمقاولات والتصنيع والعديد من الصناعات الأخرى في أكثر من 140 دولة.",
+    "trust.point1": "إعداد وتكوين سلس",
+    "trust.point2": "تدريب مباشر لفريقك",
+    "trust.point3": "دعم فني مستمر",
+    "trust.point4": "تأهيل سلس لإنتاجية فورية",
+    "trust.note":
+      "احصل على قيمة من اليوم الأول — مع نظام سيحب فريقك استخدامه فعلاً.",
 
     // Why Choose Us Section
-    "choose.title": "لماذا تختار تالي برايم؟",
-    "choose.subtitle": "قادة الصناعة الذين ساعدوا أكثر من 1000 شركة في تحسين إعداد تالي الخاص بهم.",
-    "choose.feature1.title": "استشاريون خبراء",
-    "choose.feature1.desc": "لدى فريقنا 15+ سنة من خبرة تطبيق تالي.",
-    "choose.feature2.title": "سريع وسهل",
-    "choose.feature2.desc": "تناسب الجلسات مدتها 30 دقيقة بشكل مثالي في جدولك المزدحم.",
-    "choose.feature3.title": "نتائج مثبتة",
-    "choose.feature3.desc": "يشهد متوسط العملاء تحسناً بنسبة 25% في الكفاءة خلال 3 أشهر.",
-    "choose.feature4.title": "دعم مستمر",
-    "choose.feature4.desc": "نحن لا نراجع فقط - نحن ندعم رحلة التنفيذ الخاصة بك.",
+  // AR
+"whychoose.title": "لماذا تختار الشركات برنامج تالي برايم؟",
+"whychoose.description":
+  "فواتير ذكية، رؤى فورية للأعمال، إدارة سلسة للمخزون، والامتثال الكامل لضريبة القيمة المضافة — كل ذلك في نظام واحد قوي سهل الاستخدام وقابل للتوسع مع نمو عملك.",
+
 
     // Booking Section
     "booking.title": "هل أنت مستعد لتغيير إعداد تالي الخاص بك؟",
@@ -204,7 +220,8 @@ export const translations = {
     "modal.date": "التاريخ",
     "modal.time": "الوقت المفضل",
     "modal.notes": "أسئلة أو تحديات محددة (اختياري)",
-    "modal.notesPlaceholder": "أخبرنا عن إعداد تالي الخاص بك والتحديات المحددة والأسئلة التي تود مناقشتها...",
+    "modal.notesPlaceholder":
+      "أخبرنا عن إعداد تالي الخاص بك والتحديات المحددة والأسئلة التي تود مناقشتها...",
     "modal.cancel": "إلغاء",
     "modal.confirm": "تأكيد الحجز",
     "modal.slotSelected": "تم اختيار الفتحة",
@@ -212,46 +229,56 @@ export const translations = {
     "modal.booking": "جاري الحجز...",
     "modal.characters": "أحرف",
 
-    // Footer
-    "footer.copyright": "تالي برايم. جميع الحقوق محفوظة.",
+    // ✅ Footer (Full content added)
+    "footer.description":
+      "استفد إلى أقصى حد من برنامج تالي مع الإرشاد المتخصص.",
+    "footer.productTitle": "المنتج",
+    "footer.features": "الميزات",
+    "footer.pricing": "الأسعار",
+    "footer.security": "الأمان",
+    "footer.companyTitle": "الشركة",
+    "footer.about": "حول",
+    "footer.blog": "مدونة",
+    "footer.contact": "اتصل",
+    "footer.legalTitle": "القانونية",
     "footer.privacy": "سياسة الخصوصية",
     "footer.terms": "شروط الخدمة",
-    "footer.contact": "اتصل",
+    "footer.cookies": "ملفات تعريف الارتباط",
+    "footer.copyright": "تالي برايم. جميع الحقوق محفوظة.",
   },
-}
-
+};
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("en")
-  const [mounted, setMounted] = useState(false)
+  const [language, setLanguage] = useState<Language>("en");
+  const [mounted, setMounted] = useState(false);
 
   // ✅ Load from localStorage on mount
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("language") as Language | null
+      const saved = localStorage.getItem("language") as Language | null;
       if (saved === "ar" || saved === "en") {
-        setLanguage(saved)
+        setLanguage(saved);
       }
-      setMounted(true)
+      setMounted(true);
     }
-  }, [])
+  }, []);
 
   // ✅ Update <html> attributes & localStorage
   useEffect(() => {
-    if (!mounted) return
-    document.documentElement.lang = language
-    document.documentElement.dir = language === "ar" ? "rtl" : "ltr"
-    localStorage.setItem("language", language)
-  }, [language, mounted])
+    if (!mounted) return;
+    document.documentElement.lang = language;
+    document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+    localStorage.setItem("language", language);
+  }, [language, mounted]);
 
   const t = (key: string): string => {
-    const translation = (translations[language] as Record<string, string>)[key]
-    return translation || key // fallback
-  }
+    const translation = (translations[language] as Record<string, string>)[key];
+    return translation || key; // fallback
+  };
 
   if (!mounted) {
     // prevent hydration mismatch
-    return null
+    return null;
   }
 
   return (
@@ -265,13 +292,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     >
       {children}
     </LanguageContext.Provider>
-  )
+  );
 }
 
 export function useLanguage() {
-  const context = useContext(LanguageContext)
+  const context = useContext(LanguageContext);
   if (!context) {
-    throw new Error("useLanguage must be used within a LanguageProvider")
+    throw new Error("useLanguage must be used within a LanguageProvider");
   }
-  return context
+  return context;
 }
