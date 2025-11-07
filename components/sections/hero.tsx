@@ -21,20 +21,20 @@ export default function Hero() {
       {/* Background gradient */}
       <div className="absolute inset-0  from-primary/5 via-transparent to-accent/5 pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <div className="space-y-6 sm:space-y-8">
-            <div
+            {/* <div
               className={`transition-all duration-1000 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs sm:text-sm font-medium mb-4">
                 {t("hero.badge")}
               </span>
-            </div>
+            </div> */}
 
             <h1
-              className={`text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance transition-all duration-1000 delay-100 ${
+              className={`text-4xl sm:text-5xl lg:text-[40px] font-bold leading-tight text-balance transition-all duration-1000 delay-100 ${
                 isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
             >
