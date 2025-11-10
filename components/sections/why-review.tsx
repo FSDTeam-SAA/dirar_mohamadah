@@ -19,7 +19,7 @@ export default function KeyValueSection() {
   ]
 
   return (
-    <section id="key" className="py-20 sm:py-28 lg:py-32 relative bg-[#DCF2FB]">
+    <section id="keypoints" className="py-20 sm:py-28 lg:py-32 relative bg-[#DCF2FB]">
       <div className="absolute inset-0 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

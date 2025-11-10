@@ -21,8 +21,8 @@ export const translations = {
     // Navigation
     "nav.brand": "TallyPrime",
     "nav.why": "Why Review",
-    "nav.included": "What's Included",
-    "nav.who": "Who It's For",
+    "nav.included": "Free Consultation",
+    "nav.who": "Book your free consultation",
     "nav.bookNow": "Book Now",
 
     // Hero Section
@@ -73,14 +73,14 @@ export const translations = {
       "Get value from day one — with a system your team will actually enjoy using.",
 
     // Why Choose Us Section
-   // EN
-"whychoose.title": "Why Businesses Choose TallyPrime",
-"whychoose.description":
-  "Smart billing, real-time business insights, seamless inventory management, and complete VAT compliance — all in one powerful system that’s easy to use and scalable as your business grows.",
+    // EN
+    "whychoose.title": "Why Businesses Choose TallyPrime",
+    "whychoose.description":
+      "Smart billing, real-time business insights, seamless inventory management, and complete VAT compliance — all in one powerful system that’s easy to use and scalable as your business grows.",
 
 
     // Booking Section
-    "booking.title": "Ready to Transform Your Tally Setup?",
+    "booking.title": "Book your free consultation now!",
     "booking.subtitle":
       "Book your free 30-minute product review session today. Our experts will analyze your current setup and provide personalized recommendations.",
     "booking.cta": "Book a Review Call",
@@ -90,6 +90,13 @@ export const translations = {
     "booking.confirmed": "Booking Confirmed!",
     "booking.confirmedMsg":
       "Check the browser console to see your booking details. We'll send you a confirmation email shortly.",
+    "booking.notice":
+      "Please note: Consultation slots are reserved for businesses actively planning to implement TallyPrime. If you are not currently evaluating a business software upgrade, we kindly ask that you do not submit this form.",
+    "booking.trusted":
+      "Trusted by businesses in retail, trading, manufacturing, contracting, and more across more than 140 countries.",
+    "booking.support":
+      "Our certified team ensures seamless implementation, live training, ongoing support, and smooth onboarding — helping your business get immediate value from day one.",
+
 
     // Booking Modal
     "modal.title": "Book Your Free Review",
@@ -115,37 +122,41 @@ export const translations = {
     "modal.characters": "characters",
 
     // ✅ Footer (Full content added)
-    "footer.description": "Maximize your Tally potential with expert guidance.",
-    "footer.productTitle": "Product",
-    "footer.features": "Features",
-    "footer.pricing": "Pricing",
-    "footer.security": "Security",
-    "footer.companyTitle": "Company",
-    "footer.about": "About",
-    "footer.blog": "Blog",
-    "footer.contact": "Contact",
-    "footer.legalTitle": "Legal",
-    "footer.privacy": "Privacy Policy",
-    "footer.terms": "Terms of Service",
-    "footer.cookies": "Cookies",
-    "footer.copyright": "TallyPrime. All rights reserved.",
+   // ✅ Footer (Updated content)
+"footer.description": "Maximize your Tally potential with expert guidance.",
+"footer.productTitle": "Product",
+"footer.features": "Why Review",
+"footer.pricing": "Key Value Proposition",
+"footer.security": "Free Consultation",
+"footer.companyTitle": "Company",
+"footer.about": "Includes",
+"footer.blog": "Trusted Worldwide",
+"footer.contact": "Why Choose",
+"footer.legalTitle": "Legal",
+"footer.privacy": "Book your free consultation",
+// "footer.terms": "",
+// "footer.cookies": "",
+"footer.copyright": "TallyPrime. All rights reserved.",
+
   },
 
   ar: {
     // Navigation
     "nav.brand": "تالي برايم",
     "nav.why": "لماذا المراجعة",
-    "nav.included": "ما المدرج",
-    "nav.who": "من أجله",
+    "nav.included": "استشارة مجانية",
+    "nav.who": "احجز استشارتك المجانية",
     "nav.bookNow": "احجز الآن",
 
     // Hero Section
+    // Hero Section
     "hero.badge": "مراجعة منتج مجانية",
-    "hero.title": "غيّر طريقة استخدامك لبرنامج تالي",
+    "hero.title": "برنامج محاسبة وإدارة أعمال متوافق مع ضريبة القيمة المضافة للشركات في السعودية ودول الخليج",
     "hero.description":
-      "جدول جلسة مراجعة المنتج المجانية الخاصة بك لفتح القوة الكاملة لبرنامج تالي برايم. حدد الأخطاء وسهل العمليات واستفد من إعدادك.",
-    "hero.cta": "احجز مكالمة مراجعة",
-    "hero.learnMore": "تعرف على المزيد",
+      "موثوق به من قبل أكثر من 7,000,000 مستخدم نشط في أكثر من 130 دولة — يساعدك TallyPrime على أتمتة المحاسبة، وإدارة المخزون، والحصول على تقارير مالية فورية، وضمان الامتثال الكامل لضريبة القيمة المضافة.",
+    "hero.cta": "احجز استشارة مجانية",
+    "hero.learnMore": "حدد موعد لعرض مخصص",
+
 
     // Add to AR
     "key.title": "القيمة الأساسية",
@@ -189,14 +200,14 @@ export const translations = {
       "احصل على قيمة من اليوم الأول — مع نظام سيحب فريقك استخدامه فعلاً.",
 
     // Why Choose Us Section
-  // AR
-"whychoose.title": "لماذا تختار الشركات برنامج تالي برايم؟",
-"whychoose.description":
-  "فواتير ذكية، رؤى فورية للأعمال، إدارة سلسة للمخزون، والامتثال الكامل لضريبة القيمة المضافة — كل ذلك في نظام واحد قوي سهل الاستخدام وقابل للتوسع مع نمو عملك.",
+    // AR
+    "whychoose.title": "لماذا تختار الشركات برنامج تالي برايم؟",
+    "whychoose.description":
+      "فواتير ذكية، رؤى فورية للأعمال، إدارة سلسة للمخزون، والامتثال الكامل لضريبة القيمة المضافة — كل ذلك في نظام واحد قوي سهل الاستخدام وقابل للتوسع مع نمو عملك.",
 
 
     // Booking Section
-    "booking.title": "هل أنت مستعد لتغيير إعداد تالي الخاص بك؟",
+    "booking.title": "احجز استشارتك المجانية الآن",
     "booking.subtitle":
       "احجز جلسة مراجعة منتج مجانية مدتها 30 دقيقة اليوم. سيقوم خبراؤنا بتحليل الإعداد الحالي الخاص بك وتقديم توصيات مخصصة.",
     "booking.cta": "احجز مكالمة مراجعة",
@@ -206,6 +217,13 @@ export const translations = {
     "booking.confirmed": "تم تأكيد الحجز!",
     "booking.confirmedMsg":
       "تحقق من وحدة تحكم المتصفح الخاصة بك لرؤية تفاصيل الحجز الخاص بك. سنرسل لك رسالة بريد إلكتروني للتأكيد قريباً.",
+    "booking.notice":
+      "يرجى الملاحظة: يتم تخصيص مواعيد الاستشارة للشركات التي تخطط فعلياً لتطبيق برنامج TallyPrime. إذا لم تكن تقوم حالياً بتقييم ترقية نظام عملك، فنرجو عدم إرسال هذا النموذج.",
+    "booking.trusted":
+      "موثوق لدى الشركات في مجالات التجارة والتجزئة والتصنيع والمقاولات وغيرها في أكثر من 140 دولة.",
+    "booking.support":
+      "يضمن فريقنا المعتمد تنفيذًا سلسًا، تدريبًا مباشراً، دعمًا مستمرًا، وتفعيلًا سريعًا — لمساعدة عملك على تحقيق القيمة من اليوم الأول.",
+
 
     // Booking Modal
     "modal.title": "احجز مراجعتك المجانية",
@@ -230,21 +248,22 @@ export const translations = {
     "modal.characters": "أحرف",
 
     // ✅ Footer (Full content added)
-    "footer.description":
-      "استفد إلى أقصى حد من برنامج تالي مع الإرشاد المتخصص.",
-    "footer.productTitle": "المنتج",
-    "footer.features": "الميزات",
-    "footer.pricing": "الأسعار",
-    "footer.security": "الأمان",
-    "footer.companyTitle": "الشركة",
-    "footer.about": "حول",
-    "footer.blog": "مدونة",
-    "footer.contact": "اتصل",
-    "footer.legalTitle": "القانونية",
-    "footer.privacy": "سياسة الخصوصية",
-    "footer.terms": "شروط الخدمة",
-    "footer.cookies": "ملفات تعريف الارتباط",
-    "footer.copyright": "تالي برايم. جميع الحقوق محفوظة.",
+   // ✅ Footer (Arabic content)
+"footer.description": "استفد إلى أقصى حد من إمكانيات Tally مع الإرشادات الخبيرة.",
+"footer.productTitle": "المنتج",
+"footer.features": "لماذا المراجعة",
+"footer.pricing": "القيمة المقترحة الرئيسية",
+"footer.security": "استشارة مجانية",
+"footer.companyTitle": "الشركة",
+"footer.about": "يشمل",
+"footer.blog": "موثوق عالميًا",
+"footer.contact": "لماذا تختار",
+"footer.legalTitle": "القانوني",
+"footer.privacy": "احجز استشارتك المجانية",
+"footer.terms": "",
+"footer.cookies": "",
+"footer.copyright": "TallyPrime. جميع الحقوق محفوظة.",
+
   },
 };
 
