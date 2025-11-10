@@ -8,7 +8,7 @@ import { Award, Users, Globe } from "lucide-react"
 const stats = [
   {
     icon: Users,
-    number: "24k+",
+    number: "7M+",
     label: {
       en: "Tally Users Trusted",
       ar: "مستخدمو تالي يثقون بنا",
@@ -16,7 +16,7 @@ const stats = [
   },
   {
     icon: Globe,
-    number: "50+",
+    number: "130+",
     label: {
       en: "Countries Served",
       ar: "دول نخدمها",
@@ -24,7 +24,7 @@ const stats = [
   },
   {
     icon: Award,
-    number: "100%",
+    number: "37K",
     label: {
       en: "Certified Partners",
       ar: "شركاء معتمدون",
@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
   const { t, language } = useLanguage()
 
   return (
-    <section className="py-20 sm:py-28 lg:py-32 bg-[#006EA6] relative">
+    <section className="py-20 sm:py-28 lg:py-32 bg-[#006EA6] relative" id="whychoose">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
@@ -51,12 +51,12 @@ export default function WhyChooseUs() {
           </ScrollTrigger>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-stretch">
             {stats.map((stat, index) => {
               const Icon = stat.icon
               return (
                 <ScrollTrigger key={index} animation="slide-in-up" delay={index * 150}>
-                  <Card className="p-6 text-center border border-border bg-card transition-all duration-300 hover:border-primary/50 group">
+                  <Card className="p-6 h-full flex flex-col justify-center text-center border border-border bg-card transition-all duration-300 hover:border-primary/50 group">
                     <Icon className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
                     <div className="text-2xl sm:text-3xl font-bold text-foreground mb-1">
                       {stat.number}

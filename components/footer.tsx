@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/contexts/language-context"
 import clsx from "clsx"
+import Link from "next/link"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -38,19 +39,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-white/60">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="#" className="hover:text-white transition-colors">
                   {t("footer.features") || "Features"}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="#keypoints" className="hover:text-white transition-colors">
                   {t("footer.pricing") || "Pricing"}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="#included" className="hover:text-white transition-colors">
                   {t("footer.security") || "Security"}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -62,19 +63,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-white/60">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="#included" className="hover:text-white transition-colors">
                   {t("footer.about") || "About"}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="#trust" className="hover:text-white transition-colors">
                   {t("footer.blog") || "Blog"}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="#whychoose" className="hover:text-white transition-colors">
                   {t("footer.contact") || "Contact"}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -86,11 +87,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-white/60">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="#booking" className="hover:text-white transition-colors">
                   {t("footer.privacy") || "Privacy Policy"}
-                </a>
+                </Link>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-white transition-colors">
                   {t("footer.terms") || "Terms of Service"}
                 </a>
@@ -99,7 +100,7 @@ export default function Footer() {
                 <a href="#" className="hover:text-white transition-colors">
                   {t("footer.cookies") || "Cookies"}
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -73,9 +73,9 @@ export default function Hero() {
 
           {/* Visual */}
           <ScrollTrigger animation="fade-in-right" delay={400}>
-            <div className="relative h-80 sm:h-96 lg:h-full min-h-120  from-primary/10 to-accent/10 rounded-2xl overflow-hidden group">
+            <div className="relative h-80 sm:h-96 lg:h-full min-h-[580px]  from-primary/10 to-accent/10 rounded-2xl overflow-hidden group">
               <Image
-                src="/business-owner-tally-dashboard.jpg"
+                src="/heronew.svg"
                 alt={t("hero.title")}
                 width={1000}
                 height={1000}

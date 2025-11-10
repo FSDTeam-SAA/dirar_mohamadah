@@ -43,7 +43,7 @@ export default function Navigation() {
               <Link href="#included" className="text-white  transition-colors text-base">
                 {t("nav.included")}
               </Link>
-              <Link href="#who" className="text-white  transition-colors text-base">
+              <Link href="#booking" className="text-white  transition-colors text-base">
                 {t("nav.who")}
               </Link>
             </div>
