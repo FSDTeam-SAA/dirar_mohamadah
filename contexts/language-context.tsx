@@ -28,9 +28,9 @@ export const translations = {
     // Hero Section
     "hero.badge": "Free Product Review",
     "hero.title":
-      "VAT-Ready Business Accounting & Management Software for Companies in Saudi Arabia & the GCC",
+      "Tally Accounting and Business Management Software Compatible with VAT for Companies in Saudi Arabia and the Gulf Countries",
     "hero.description":
-      "Trusted by 7,500,000+ active users across 120+ countries — TallyPrime helps you automate accounting, manage inventory, get real-time financial insights, & ensure full VAT compliance.",
+      "At Tally, we believe in the role of technology in facilitating effective business management, allowing business owners to focus on what matters most. Tally Prime embodies this vision through automation of processes and providing a seamless experience without complexity. With greater flexibility and adaptability to your business needs, Tally Prime offers an advanced experience that confidently meets your expectations.",
     "hero.cta": "Book a Free Consultation",
     "hero.learnMore": "Schedule a Personalized Demo",
 
@@ -48,7 +48,7 @@ export const translations = {
     // What's Included Section
     "consult.title": "Free Consultation Includes:",
     // "consult.subtitle": "During your complimentary session, you will receive:",
-    "consult.subtitle": "If you're currently using Excel, manual bookkeeping, or need a system upgrade, this session will show how TallyPrime can streamline operations and accelerate business.",
+    "consult.subtitle": "If you need to upgrade your current accounting processes, using Tally has never been easier.",
     "consult.point1":
       "A personalized system walkthrough based on your industry",
     "consult.point2": "Recommended accounting & inventory workflows",
@@ -92,7 +92,7 @@ export const translations = {
     "booking.confirmedMsg":
       "Check the browser console to see your booking details. We'll send you a confirmation email shortly.",
     "booking.notice":
-      "Please note: Consultation slots are reserved for businesses actively planning to implement TallyPrime. If you are not currently evaluating a business software upgrade, we kindly ask that you do not submit this form.",
+      "Please note: Consultation slots are reserved for businesses actively planning to implement TallyPrime. If you are not currently evaluating a business software upgrade, we kindly ask that you do not submit this form. ",
     "booking.trusted":
       "Trusted by businesses in retail, trading, manufacturing, contracting, & more across more than 120 countries.",
     "booking.support":
@@ -154,7 +154,7 @@ export const translations = {
     "hero.badge": "مراجعة منتج مجانية",
     "hero.title": "برنامج محاسبة وإدارة أعمال متوافق مع ضريبة القيمة المضافة للشركات في السعودية ودول الخليج",
     "hero.description":
-      "موثوق به من قبل أكثر من 7,500,000 مستخدم نشط في أكثر من 130 دولة — يساعدك TallyPrime على أتمتة المحاسبة، وإدارة المخزون، والحصول على تقارير مالية فورية، وضمان الامتثال الكامل لضريبة القيمة المضافة.",
+      "في تالي، نؤمن بدور التكنولوجيا في تسهيل إدارة الأعمال بفعالية، مما يتيح لأصحاب الشركات التركيز على الأهم. يجسد تالي برايم هذه الرؤية من خلال أتمتة العمليات وتوفير تجربة سلسة دون تعقيد. بمرونة أكبر وقدرة على التكيف مع احتياجات عملك، يقدم تالي برايم تجربة متطورة تلبي توقعاتك بثقة.",
     "hero.cta": "احجز استشارة مجانية",
     "hero.learnMore": "حدد موعد لعرض مخصص",
 
@@ -176,7 +176,7 @@ export const translations = {
     // AR
     "consult.title": "تشمل الاستشارة المجانية:",
     // "consult.subtitle": "أثناء جلستك المجانية، ستحصل على:",
-    "consult.subtitle": "إذا كنت تستخدم Excel، أو تقوم بمسك الدفاتر يدويًا، أو تحتاج إلى ترقية للنظام، فسوف توضح لك هذه الجلسة كيف يمكن لبرنامج TallyPrime تحسين العمليات وتسريع نمو الأعمال.",
+    "consult.subtitle": "اذا كنت تحتاج ترقية عملياتك المحاسبيه الحالية، استخدام تالي لم يكن اسهل من ذي قبل.",
     "consult.point1": "عرض مخصص للنظام بناءً على مجال عملك",
     "consult.point2": "توصيات لسير العمل المحاسبي وإدارة المخزون",
     "consult.point3":
