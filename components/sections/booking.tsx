@@ -219,9 +219,12 @@ export default function BookingSection() {
           <p className="text-lg sm:text-xl text-foreground/60">{t("booking.subtitle")}</p>
 
           {/* ✅ NEW CONTENT */}
+          <div className="flex items-center">
           <p className="text-sm text-foreground/50 max-w-2xl mx-auto mt-4">
             {t("booking.notice")}
           </p>
+          <span className="text-2xl">⚠️</span>
+          </div>
 
           <div className="mt-8 text-center max-w-3xl mx-auto space-y-3 text-foreground/70">
             <p>{t("booking.trusted")}</p>

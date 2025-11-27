@@ -34,7 +34,7 @@ export default function Hero() {
             </div> */}
 
             <h1
-              className={`text-4xl sm:text-5xl lg:text-[40px] font-bold leading-tight text-balance transition-all duration-1000 delay-100 ${
+              className={`text-4xl sm:text-5xl lg:text-[33px] font-bold leading-tight text-balance transition-all duration-1000 delay-100 ${
                 isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
             >
@@ -42,7 +42,7 @@ export default function Hero() {
             </h1>
 
             <p
-              className={`text-lg sm:text-xl text-foreground/70 leading-relaxed text-balance transition-all duration-1000 delay-200 ${
+              className={`text-[18px] sm:text-[18px]  text-foreground/70 leading-relaxed text-balance transition-all duration-1000 delay-200 ${
                 isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
             >
